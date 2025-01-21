@@ -3,6 +3,11 @@ version: "3"
 services:
   web:
     image: python_app:version_de_ouf
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+          cpus: '1.0'
     environment:
       PORT: 80
       DB_HOST: "db"

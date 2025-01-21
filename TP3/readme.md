@@ -117,11 +117,5 @@ On va ajouter une VM dans la topologie, histoire que vous voyiez cet aspect de G
 
 🌞 **VM `dhcp.tp3.b2`**
 
-- Rocky Linux, IP statique, nom défini à `dhcp.tp3.b2`, SELinux désactivé, firewall activé, système à jour, NORMAL LA ROUTINE QUOI
-- installez un serveur DHCP
-  - il doit délivrer des IPs entre `10.3.1.100` et `10.3.1.200`
-- vérifier avec le `pc4` que vous pouvez récupérer une IP en DHCP
-- vérifier avec le `pc5` que vous ne pouvez PAS récupérer une IP en DHCP
 
-> Pour rappel, la trame DHCP Discover part en broadcast. Le switch bloque ça aussi, il bloque tout, il s'en fout de la nature de la trame : si ça passe d'un port taggé VLAN X à un port taggé VLAN Y, ça dégage.
 

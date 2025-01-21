@@ -183,19 +183,9 @@ OK, VALID
 
 🌞 **Configurer une sonde TCP**
 
-- c'est à dire qu'on va demander à Netdata de faire une requête TCP vers un port
-  - si le port répond, Netdata considère que le service est up
-  - sinon, il considère que c'est down
-- ça va nous permettre de suivre un peu en temps réel si notre service est accessible depuis le réseau
-- [cette section de la doc](https://learn.netdata.cloud/docs/data-collection/synthetic-checks/tcp-endpoints) parle de comment faire, lisez et check les exemples
 
-> Dans le monde réel, le serveur de monitoring qui fait ce genre de checks est souvent installé sur une autre machine. Comme ça on simule vraiment un accès par le réseau à l'application, pour savoir si elle est disponible.
 
 🌞 **Alerting Discord**
 
-- vous connaissez la chanson : j'aimerai que vous récupériez des alertes automatiquement sur Discord
-- [cette section de la doc qui en parle](https://learn.netdata.cloud/docs/alerting/notifications/agent-dispatched-notifications/discord)
-- testez que vous recevez une alerte quand vous coupez le service, et que votre sonde TCP n'a plus de réponse
 
-![Monitoring](./img/monitoring.jpg)
 
